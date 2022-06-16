@@ -61,8 +61,8 @@ echo "************************************"
 
 mkdir -p build
 available_patches=$(java -jar revanced-cli.jar -b revanced-patches.jar -a a -o b -l | sed -Er  's#\[available\] (.+)#-i \1 #')
-# Uncomment and modify the following line to set different patches -i shorts-button
- available_patches="-i codecs-unlock -i exclusive-audio-playback -i tasteBuilder-remover -i upgrade-button-remover -i background-play -i general-ads -i video-ads -i seekbar-tapping -i amoled -i premium-heading -i disable-create-button -i minimized-playback -i old-quality-layout -i microg-support -i hide-cast-button"
+# Uncomment and modify the following line to set different patches 
+ available_patches="-i codecs-unlock -i exclusive-audio-playback -i tasteBuilder-remover -i upgrade-button-remover -i background-play -i general-ads -i video-ads -i shorts-button -i seekbar-tapping -i amoled -i premium-heading -i disable-create-button -i minimized-playback -i old-quality-layout -i microg-support -i hide-cast-button"
 
 if [ -f "com.google.android.youtube.apk" ]
 then
